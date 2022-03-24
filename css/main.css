@@ -1,0 +1,137 @@
+*{margin:0; padding:0; box-sizing:border-box}
+section{
+   display:flex;
+   align-items:center;
+   justify-content:center;
+   width:100vw;
+   height:100vh;
+}
+.player{
+   margin:10px auto;
+   max-width:680px;
+   min-width:340px;
+   width:100%;
+   border-radius:10px;
+   border:1px solid #2b3c5b;
+   overflow:hidden;
+}
+.video{
+   display:block;
+   width:100%;
+   height:auto;
+   background:#eee;
+   cursor:pointer;
+}
+.panel{
+   display:flex;
+   align-items:center;
+   width:100%;
+   margin:0 auto;
+   padding:12px 20px 13px;
+   background:#3e5379;
+}
+.panel a{
+   display:block;
+   width:44px;
+   height:44px;
+   margin-right:5px;
+   position:relative;
+   background:url(../img/button.png) 0% 0% / auto 440% no-repeat;
+   filter:invert(1);
+}
+a.play{background-position:-50px -2px}
+a.active.play{
+   background:url(../img/button.png) 0% 0% / auto 400% no-repeat;
+   background-position:-88px -.5px
+}
+a.stop{background-position:-50px -51.5px}
+
+.timer{
+   margin-left:auto;
+   color:#e4e9ed;
+   font-size:24px;
+   font-style:normal;
+   font-weight:500;
+   line-height:28px;
+}
+
+.progress{
+   flex-grow:1;
+   margin:0 22px 0 12px;
+   cursor:pointer;
+}
+
+
+
+/* оформление input */
+/* скрывает слайдер, чтобы можно было добавить собственные стили. */
+input[type=range]:focus {outline:none;}
+input[type=range]::-webkit-slider-thumb {-webkit-appearance:none}
+
+input[type=range] {
+   -webkit-appearance:none;
+   width:auto; /* для Firefox. */
+}
+input[type=range]::-ms-track {
+	background:transparent;
+	border-color:transparent;
+	color:transparent;
+}
+
+
+/* Оформление ползунка */
+/* для браузеров на движках WebKit */
+input[type=range]::-webkit-slider-thumb {
+	height:24px;
+	width:10px;
+	background:#35a4e2;
+	cursor:pointer;
+	margin:-8px 0;
+}
+/* для Firefox */
+input[type=range]::-moz-range-thumb {
+	height:24px;
+	width:10px;
+	background:#5959e8;
+	cursor:pointer;
+	margin:-8px 0;
+}
+/* для IE */
+input[type=range]::-ms-thumb {
+	height:24px;
+	width:10px;
+	background:#5959e8;
+	cursor:pointer;
+	margin:-8px 0;
+}
+
+
+/* Оформление полосы диапазона */
+input[type=range]::-webkit-slider-runnable-track {
+	width:auto;
+	height:8px;
+	cursor:pointer;
+	background:#fff;
+}
+input[type=range]:focus::-webkit-slider-runnable-track {
+	background:#fff;
+}
+input[type=range]::-moz-range-track {
+	width:auto;
+	height:8px;
+	cursor:pointer;
+	background:#fff;
+}
+input[type=range]::-ms-track {
+	width:auto;
+	height:8px;
+	cursor:pointer;
+	background:transparent;
+	border-color:transparent;
+	border-width:8px 0;
+	color:transparent;
+}
+input[type=range]::-ms-fill-lower {background:#fff}
+input[type=range]::-ms-fill-upper {background:#fff}
+input[type=range]:focus::-ms-fill-lower {background:#fff}
+input[type=range]:focus::-ms-fill-upper {background:#fff}
