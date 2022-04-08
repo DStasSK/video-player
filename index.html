@@ -6,15 +6,31 @@
 <body>
    <section>
       <div class="player">
-         <video src="media/Colombia - 24746.mp4" class="video"></video>
+         <video src="media/minute.mp4" class="video"></video>
          <div class="panel">
             <a class="play" title="play/pause" href="#" onclick="return false;"></a>
             <a class="stop" title="stop" href="#" onclick="return false;"></a>
-            <input type="range" min="0" max="100" class="progress" value="0">
+            <input type="range" min="0" max="60" class="progress" value="0">
             <div class="timer">00:00</div>
          </div>
       </div>
    </section>
+
+   <section>
+      <ul class="setTime">
+         <li><span name="time" data-set-time="1">00:01</span>Итак, я на работе</li>
+         <li><span name="time" data-set-time="4">00:04</span>О!!! Новый проект, конечно СЕГОДНЯ сделаю, ШЕФ!</li>
+         <li><span name="time" data-set-time="5">00:05</span>Что бы пожевать?</li>
+         <li><span name="time" data-set-time="15">00:15</span>Чем бы еще заняться?</li>
+         <!-- <li><span name="time" data-set-time="25">00:25</span>Эх, щас бы Машку за ляшку :-)</li> -->
+         <li><span name="time" data-set-time="30">00:30</span>Ура, обед!!</li>
+         <li><span name="time" data-set-time="40">00:40</span>Чайку что ли накатить…</li>
+         <li><span name="time" data-set-time="45">00:45</span>Пойду к соседям схожу.</li>
+         <li><span name="time" data-set-time="54">00:54</span>Ептыть… проект…</li>
+         <li><span name="time" data-set-time="58">00:58</span>А ладно, скажу что слишком сложный, работы много будет…</li>
+      </ul>
+   </section>
+
 
    <script src="js/main.js"></script>
 </body>

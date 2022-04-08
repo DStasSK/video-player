@@ -1,15 +1,14 @@
 *{margin:0; padding:0; box-sizing:border-box}
 section{
-   display:flex;
-   align-items:center;
-   justify-content:center;
-   width:100vw;
-   height:100vh;
+   margin:10px auto;
+   max-width:700px;
+   min-width:340px;
+   width:100%;
 }
 .player{
-   margin:10px auto;
-   max-width:680px;
-   min-width:340px;
+   /* margin:10px auto;
+   max-width:800px;
+   min-width:340px; */
    width:100%;
    border-radius:10px;
    border:1px solid #2b3c5b;
@@ -135,3 +134,25 @@ input[type=range]::-ms-fill-lower {background:#fff}
 input[type=range]::-ms-fill-upper {background:#fff}
 input[type=range]:focus::-ms-fill-lower {background:#fff}
 input[type=range]:focus::-ms-fill-upper {background:#fff}
+
+
+
+
+/* оформление тайм кодов */
+.setTime{
+   font-size:20px;
+   font-family:serif;
+}
+.setTime li{
+   display:block;
+   padding:2px 5px;
+}
+.setTime li:nth-child(odd){
+   background:#eef;
+}
+.setTime span{
+   display:inline-block;
+   padding-right:10px;
+   color:#00e;
+   cursor:pointer;
+}
